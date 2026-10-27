@@ -15,12 +15,30 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     gap: '5px'
   },
+  iconeSubtitulo: {
+    fontSize: 25
+  },  
   textoSubtitulo: {
-    fontSize: '20px',
+    fontSize: '23px',
     fontWeight: 'bold'
   },
   bgColorMain: {
     backgroundColor: '#b92121'
+  },
+  botao: {
+    width: '100%',
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent:'center',
+    alignItems: 'center',
+    gap: 8,
+    padding: 7,
+    borderRadius: 15,
+  },
+  textoBotao: {
+    fontSize: 18,
+    color: 'white',
+    fontWeight: 'bold'
   }
 });
 
