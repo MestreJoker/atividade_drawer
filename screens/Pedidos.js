@@ -1,12 +1,41 @@
-import { View, Text } from 'react-native';
+import { StyleSheet, View, Text, Image } from 'react-native';
 import Header from '../components/Header';
+import styles from '../styles/style';
+import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
+import { faBacon, faBurger, faMartiniGlass, faCakeCandles, faAngleRight } from '@fortawesome/free-solid-svg-icons';
 
-export default function Pedidos({ navigation }) {
+export default function Favoritos({ navigation }) {
+
   return (
-    <View style={{ flex: 1 }}>
+    <View style={styles.container}>
       <Header navigation={navigation} />
 
-      <Text>Pedidos</Text>
+      <View style={{flex: 1, display: 'flex', justifyContent: 'center'}}>
+        <Image source={require(`../assets/pedido.png`)} style={{ width: 89, height: 80, marginHorizontal: 'auto'}} />
+
+        <View style={styles.conteudo}>
+          <Text style={{ fontSize: 27, fontWeight: 'bold', textAlign: 'center' }}>
+            Meus Pedidos
+          </Text>
+
+          <Text style={{ fontSize: 18, marginBottom: 10, textAlign: 'center', width: '70%', marginHorizontal: 'auto' }}>
+            Aqui você pode acompanhar seus pedidos.
+          </Text>
+        </View>
+      </View>
+
     </View>
   );
 }
+
+const stylesCardapio = StyleSheet.create({
+  opcaoCard: {
+    width: '100%',
+    padding: 15,
+    borderRadius: 12,
+    flexDirection: 'row',
+    alignItems: 'center',
+    backgroundColor: '#f8f3ef',
+    border: '1px solid lightgray'
+  }
+});

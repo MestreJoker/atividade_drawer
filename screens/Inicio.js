@@ -23,7 +23,7 @@ import styles from '../styles/style';
 
 export default function Inicio({ navigation }) {
   async function abrirWhatsApp() {
-    const url = 'https://wa.me/5511999999999';
+    const url = 'https://wa.me/5511953822219';
 
     try {
       await Linking.openURL(url);
@@ -70,7 +70,7 @@ export default function Inicio({ navigation }) {
             size={36}
           />
 
-          <View style={{ flex: 1, paddingHorizontal: 7 }}>
+          <View style={{ flex: 1, paddingHorizontal: 7}}>
             <Text
               style={{
                 fontSize: 17,
@@ -112,5 +112,6 @@ const stylesMain = StyleSheet.create({
     padding: 14,
     flexDirection: 'row',
     alignItems: 'center',
+    border: '1px solid green'
   },
 });
